@@ -10866,7 +10866,7 @@ div.bg-video {
   position: relative;
   max-width: 40rem;
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 .masthead .masthead-content h1, .masthead .masthead-content .h1 {
   font-size: 2.5rem;
@@ -10889,6 +10889,10 @@ div.bg-video {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: calc(1rem + 2px);
+}
+
+.bg-feri {
+  background-color: #005f85;
 }
 
 @media (max-width: 992px) {
