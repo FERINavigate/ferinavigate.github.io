@@ -51,10 +51,16 @@
                     </div>
                 </form>
                 <div class="contact-us mt-3">
-                    <p>Find out more about us
-                        <button onclick="window.location.href = 'https:/github.com/FERINavigate'" class="btn btn-dark rounded-0 m-1">
+                    <p>Find out more about us on 
+                        <button class="btn btn-dark rounded-0" onclick="openGitHub()">
                             <i class="fab fa-github"></i>
-                        </button>
+                          </button>
+                          
+                          <script>
+                          function openGitHub() {
+                            window.open('https://github.com/FERINavigate', '_blank');
+                          }
+                          </script>
                     </p>
                 </div>
             </div>
