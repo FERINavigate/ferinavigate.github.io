@@ -46,7 +46,7 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 0, 0, 0;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: rgb(0, 95, 133);
   --bs-font-sans-serif: FERIFont
   --bs-font-monospace: FERIFont;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -55,7 +55,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #000000;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #005f85;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -95,6 +95,37 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+}
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #005f85;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #007bff;
+}
+
+/* For Firefox */
+.scroll-container {
+  scrollbar-width: thin;
+}
+
+.scroll-container::-moz-scrollbar {
+  width: 10px;
+}
+
+.scroll-container::-moz-scrollbar-thumb {
+  background-color: #005f85;
+}
+
+.scroll-container::-moz-scrollbar-thumb:hover {
+  background-color: #007bff;
 }
 
 hr {
@@ -6689,7 +6720,7 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #2a5555 !important;
+  color: black !important;
 }
 .link-primary:hover, .link-primary:focus {
   color: #224444 !important;
@@ -10829,6 +10860,7 @@ body {
 
 div.bg-video {
   position: fixed;
+  top: 0;
   right: 0;
   height: 100vh;
   width: 45vw;
@@ -10836,7 +10868,7 @@ div.bg-video {
 
 @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../assets/img/bg-mobile-fallback.jpg") #2a5555 no-repeat center center scroll;
+    background: url("../assets/img/bg-mobile-fallback.jpg") #005f85 no-repeat center center scroll;
     background-size: cover;
   }
   body video {
@@ -10897,8 +10929,8 @@ div.bg-video {
 
 @media (max-width: 992px) {
   div.bg-video {
-    position: fixed;
-    bottom: 0;
+    position: inherit;
+    padding-bottom: 5rem;
     width: 100vw;
     height: 50vh;
   }

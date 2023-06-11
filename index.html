@@ -23,6 +23,43 @@
 </head>
 
 <body>
+    <!-- Masthead-->
+    <div class="masthead">
+        <div class="masthead-content text-white">
+            <div class="container-fluid px-4 px-lg-0">
+                <h1 class="fst-italic lh-1 mb-4">Our Website is Coming Soon</h1>
+                <p class="mb-5">We're working hard to finish the development of this site. Sign up below to receive
+                    updates and to be notified when we launch!</p>
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row input-group-newsletter">
+                        <div class="col p-0"><input class="form-control rounded-0" id="email" type="email"
+                                placeholder="Enter email address..." aria-label="Enter email address..."
+                                data-sb-validations="required,email" /></div>
+                        <div class="col-auto p-0 m-0"><button class="btn btn-dark disabled rounded-0" id="submitButton"
+                                type="submit">Notify Me!</button></div>
+                    </div>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3 mt-2">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3 mt-2">Error sending message!</div>
+                    </div>
+                </form>
+                <div class="contact-us mt-3">
+                    <p>Find out more about us
+                        <button onclick="window.location.href = 'https:/github.com/FERINavigate'" class="btn btn-dark rounded-0 m-1">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Animated Logo-->
     <div class="bg-video animated-logo">
         <div class="wrapper">
@@ -130,44 +167,6 @@
             // Play draw animation once
             setTimeout(draw, 300);
         </script>
-    </div>
-
-    <!-- Masthead-->
-    <div class="masthead">
-        <div class="masthead-content text-white">
-            <div class="container-fluid px-4 px-lg-0">
-                <h1 class="fst-italic lh-1 mb-4">Our Website is Coming Soon</h1>
-                <p class="mb-5">We're working hard to finish the development of this site. Sign up below to receive
-                    updates and to be notified when we launch!</p>
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row input-group-newsletter">
-                        <div class="col p-0"><input class="form-control rounded-0" id="email" type="email"
-                                placeholder="Enter email address..." aria-label="Enter email address..."
-                                data-sb-validations="required,email" /></div>
-                        <div class="col-auto p-0 m-0"><button class="btn btn-dark disabled rounded-0" id="submitButton"
-                                type="submit">Notify Me!</button></div>
-                    </div>
-                    <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
-                    <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center mb-3 mt-2">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            <br />
-                        </div>
-                    </div>
-                    <div class="d-none" id="submitErrorMessage">
-                        <div class="text-center text-danger mb-3 mt-2">Error sending message!</div>
-                    </div>
-                </form>
-                <div class="contact-us mt-3">
-                    <p>Find out more about us
-                        <button onclick="window.location.href = 'https:/github.com/FERINavigate'" class="btn btn-dark rounded-0 m-1">
-                            <i class="fab fa-github"></i>
-                        </button>
-                    </p>
-                </div>
-            </div>
-        </div>
     </div>
     <footer class="fixed-bottom bg-feri text-light text-center">
         <div class="container py-2">
